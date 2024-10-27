@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>"O Estado das Coisas", de Teresa Damásio</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        h1{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:2em;
+			font-style:italic;
+			font-weight:bold;
+			line-height:100%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h2{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1.4em;
+			font-style:normal;
+			font-weight:normal;
+			line-height:100%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h3{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1.4em;
+			font-style:normal;
+			font-weight:bold;
+			line-height:120%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h4{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1.1em;
+			font-style:normal;
+			font-weight:bold;
+			line-height:120%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h5{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:14px;
+			font-style:normal;
+			font-weight:normal;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		p{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1em;
+			font-style:normal;
+			font-weight:normal;
+			line-height:165%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 700px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 700 !important;
+                height: auto !important;
+                margin-left: auto!important;
+                margin-right: auto!important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 700 !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+                
+        }
+
+    </style>
+    </head>
+    <body bgcolor="#FFFFFF" width="100%" style="margin: 0; padding:0" yahoo="yahoo">
+    <table bgcolor="FFFFFF" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td>
+            
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">"O Estado das Coisas", de Teresa Damásio</div>
+            <!-- Visually Hidden Preheader Text : END --> 
+            
+            <!-- Cabeçalho : COMEÇO, alterar imagem -->
+            <table align="center" width="100%" class="email-container">
+            <tr>
+                <td align="center" style="font-size: 0.6em; font-weight: normal; line-height: 1em; color: #000000; font-family: sans-serif; padding:10px 0px 0px 0px">Se não conseguir visualizar corretamente este e-mail <a href="https://nldq.github.io/nl-o-estado-das-coisas/">clique aqui</a></td>
+			</tr>
+			<tr>
+				<td style="padding: 0.4em 0em 0em 0em; text-align: center" class="full-width-image"><img src="https://1drv.ms/i/s!AnUkWVoZ6eyliIBKr_1uCg97ExqYtA?embed=1&width=700&height=70" alt="Oficina do Livro" border="0" align="center" width="700" style="width: 100%; max-width: 700px; height: auto;"></td>
+            </tr>
+			<tr>
+				<td style="padding: 0em 0em 0em 0em; text-align: center" class="full-width-image"><img src="https://1drv.ms/i/s!AnUkWVoZ6eylidki6cD0mdaWKUNBhA?embed=1&width=700&height=400" alt="&quot;O Estado das Coisas&quot;, de Teresa Damásio" border="0" width="700" align="center" style="width: 100%; max-width: 700px; height: auto;"></td>
+			</tr>
+          </table>
+            <!-- Cabeçalho : FIM --> 
+            
+            <!-- Email Body : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="700" class="email-container">
+            
+<!-- Livro : COMEÇO-->
+            
+				<tr>
+				<td dir="ltr" align="center" valign="top" width="100%" style="padding: 0px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="90.5%">
+					<table align="center" width="100%">
+						<tbody>
+							<tr>
+							<td valign="top" align="center" style="padding:0px 60px 30px 60px;">
+								<h1 style="color:#00828a">O Estado das Coisas</h1>
+							<h2>Teresa Damásio</h2>
+							<h4>Nas livrarias a 29 de Outubro</h4>
+								<br>
+								<h4 style="font-weight:normal"><strong>Uma reflexão sobre Gestão e Liderança, Política e Educação, Igualdade de género e Cooperação com África.</strong></h4>
+								<p style="text-align:left !important"><br><strong>Este livro</strong> oferece uma visão e uma partilha de ideias, resultado de diferentes acontecimentos que nos levam a reflectir sobre I num mundo cada vez mais globalizado. A sua autora, Teresa Damásio, é uma líder incontornável na área da educação a nível internacional. Tem vindo a dedicar-se a temas como a Política, a Educação, a Igualdade de género, a Gestão, a Lusofonia, a Liderança e o Empreendedorismo. Como administradora de um dos maiores Grupos de Ensino de Língua Portuguesa no mundo, que actua nas mais diversas áreas da educação, tem a seu cargo diferentes equipas.<br><br>
+								<strong><em>O Estado das Coisas</em></strong> representa um olhar atento, ainda que crítico, sobre o mundo. Com base na sua intervenção em vários domínios da sociedade, Teresa Damásio ora se debruça sobre o sistema de ensino em Portugal e no mundo lusófono, ora vai mais ao pormenor e fala do papel das mulheres nas empresas, da política e do seu trabalho em prol do continente africano.</p>
+								<p style="text-align:center"><br><strong><em>«Um livro corresponde a uma pequena paragem na vida, um pequeno passo ao lado para que um momento se reflicta sobre o caminho feito, mas também para salvar o essencial das posições assumidas a cada instante. O Estado das Coisas de Teresa Damásio, livro que temos agora entre mãos, reúne as escritas, intervenções, comunicações e discursos ligados ao ensino, à vida política, à gestão africana, originadas pela sua actividade de interveniente nos últimos 30 anos na vida portuguesa.»</em></strong><br>José Bragança de Miranda no Prefácio</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			<hr width="91%" color="00828a">
+			<br><br>
+<!-- Sobre o autor -->
+<table align="center" width="100%">
+	<tr>
+        <td width="100%" class="stack-column-center">
+            <table align="left" width="250" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="Teresa Damásio." src="https://1drv.ms/i/s!AnUkWVoZ6eylidkhpYvQmZgsHqLvSg?embed=1&width=280&height=420" width="250">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="right" width="400" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td valign="top" style="padding: 0px 20px 0px 0px">
+                        	<p><strong>Teresa Damásio</strong> é administradora do Grupo Ensinus desde Julho de 2016, que faz parte do Grupo Lusófona, o maior grupo de ensino de língua portuguesa no mundo.<br>
+							É também administradora do Real Colégio de Portugal e do Grupo ISLA.<br>
+							Presidente do Conselho de Administração da Universidade Lusófona da Guiné-Bissau e Membro do Conselho de Administração do ISUPE Ekuikui II, em Angola. Presentemente, integra a Direcção da AEEP. Foi fundadora da Internacionalização do Grupo Lusófona, passou pela Assembleia da República como deputada, tendo sido também Presidente das Mulheres Socialistas da FAUL do PS.<br>
+							Actualmente, é Presidente da Assembleia de Freguesia de Benfica.<br>
+							Foi ainda nomeada como Embaixadora Portuguesa da Semana Europeia da Formação Profissional, em 2019 e 2020.<br>
+							É advogada e professora, a nível internacional, há mais de 25 anos.
+							</p>
+						</td>
+					</tr>
+            	</tbody>
+			</table>
+        </td>
+    </tr>
+</table>
+<br>
+<hr width="91%" color="00828a">
+<br>
+<!-- Capa e especificações -->
+<table align="center" width="100%">
+	<tr>
+        <td width="100%" class="stack-column-center">
+            <table align="left" width="250" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="&quot;O Estado das Coisas&quot;, de Teresa Damásio" src="https://1drv.ms/i/s!AnUkWVoZ6eylibEi14dChOdhJJtSkQ?embed=1&width=1042&height=1564" width="250">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="right" width="400" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td valign="top" style="padding: 0px 20px 0px 0px">
+                        	<p style="line-height: 250%">
+							Actualidade<br>
+							260 páginas<br>
+							17,50 Euros<br>
+							ISBN: 978-989-58-1250-9<br>
+							1.ª Edição: Outubro 2024<br>
+							Oficina do Livro
+							</p>
+						</td>
+					</tr>
+            	</tbody>
+			</table>
+        </td>
+    </tr>
+</table>
+					<table align="center" width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" align="center" style="padding: 10px">
+				<p style="text-align: center; line-height: 150%">Para mais informações:<br>
+				Rui Breda<br>
+				938 527 410<br></p>
+			</td>
+		</tr>
+		<tr>
+				<td style="padding: 0.4em 0em 0em 0em; text-align: center" class="full-width-image"><img src="https://1drv.ms/i/s!AnUkWVoZ6eyliIBLeZ6J1vcjEl7ANw?embed=1&width=700&height=125" alt="Oficina do Livro" border="0" align="center" width="700" style="width: 100%; max-width: 700px; height: auto;"></td>
+            </tr>
+	</tbody>
+					</table>
+                  </table></td>
+              </tr>
+          </table>
+            <!-- Email Body : END --> 
+            
+            <!-- Email Footer : BEGIN -->
+            
+            <!-- Email Footer : END -->
+            
+			</td></tr></table>
+</body>
+</html>
